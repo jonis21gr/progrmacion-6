@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- indica que el documento va en espanol -->
+<head>
+    <meta charset="UTF-8">
+    <title>CINE MARK</title> <!-- la etiqueta "title" indica el nombre de la pagina -->
+    <link rel="stylesheet" href="CINE.css"> <!-- esta linea es la tipo ruta para mandar a hablar la seccion deestilo para darle estilo al documento -->
+</head>
+<body>
+    <div class="container"> <!-- el "container" se utiliza para agarra todo el documento para darle el estilo o ancho de la pagina" -->
+        <h1>Venta de Boleto</h1> <!-- la etiquea "h1" es para agregar texto en este caso le da el texto del titulo-->
+        <img src="cine.png" width="100"> <!-- esta rua es de una imagen que esta guardada en el mismo documento para poder mostrar -->
+        <form action="cine.php" method="POST"> <!-- aqui ya se va ir mostrando el formulario mostrando por la ruta "cine.php"
+            se ira guardando en el documeto "cine.php" donde utilizamos el metodo "post" -->
+            <label>Nombre:</label> <!-- la etiqueta "label" se utiliza para describir -->
+            <input type="text" name="nombre" required> <!-- la etiqueta "input ayuda al formulario para que el usuario meta los datos" -->
+
+            <label>Edad:</label>
+            <input type="number" name="edad" required>
+
+            <label>Tipo de Persona:</label>
+            <select name="tipo"> <!-- la etiqueta "select se utiliza para gacer un meno desplegable" -->
+                <option value="ninguno">Público general</option> <!-- la etiqueta "option" se utiliza para mostrar las opciones -->
+                <option value="estudiante">Estudiante</option>
+                <option value="adulto_mayor">Adulto mayor</option>
+            </select>
+
+            <label>¿Tiene credencial que lo avale?</label>
+            <input type="checkbox" name="credencial" value="si"> Sí
+
+            <label>Sala:</label>
+            <select name="sala">
+                <option value="normal">Normal - $70</option>
+                <option value="2d">2D - $85</option>
+                <option value="3d">3D - $100</option>
+                <option value="vip">VIP - $150</option>
+            </select>
+
+            <button type="submit">Calcular</button> <!-- la etiqueta "button" es para dar un boton en este caso 
+            se utiliza para calcular los datos -->
+        </form> <!--cerramos el formularioS-->
+    </div>
+</body>
+</html>
