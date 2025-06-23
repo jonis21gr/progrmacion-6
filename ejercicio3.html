@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo de RadioButtons</title>
+</head>
+<!--
+Un radio button (en español: botón de opción) en páginas web 
+es un elemento de formulario que permite al usuario seleccionar solo una opción
+ dentro de un grupo de opciones.
+ 
+ Características principales:
+Se muestra como un círculo vacío que se rellena al seleccionarse.
+
+Los radio buttons que comparten el mismo nombre (name) forman un grupo.
+
+En un grupo de radio buttons, el usuario solo puede seleccionar uno.
+
+Se usan en formularios para elegir entre varias opciones excluyentes 
+(por ejemplo: sexo, nivel de estudios, método de pago, etc.).!-->
+
+
+<body>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #00ffea;
+    color: #d50fbe;
+    padding: 20px;
+  }
+  </style>
+  <h3>Elige tu tema de color preferido:</h3>
+
+<form>
+  <label>
+    <input type="radio" name="tema" value="claro"> Claro
+  </label><br>
+
+  <label>
+    <input type="radio" name="tema" value="oscuro"> Oscuro
+  </label><br>
+
+  <label>
+    <input type="radio" name="tema" value="automático"> Automático
+  </label><br>
+
+    <input type="submit" value="Enviar respuesta">
+  </form>
+</body>
+</html>
