@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Evaluación de Calificaciones</title>
+<link rel="stylesheet" href="examen.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Evaluación de Materias</h2>
+        <img src="udm.png" alt="Logo de la escuela" class="logo-centro">
+
+        <form method="POST" action="examen.php">
+            <label for="nombre">Nombre del alumno:</label>
+            <input type="text" id="nombre" name="nombre" required>
+<label for="materia">Materia:</label>
+<select id="materia" name="materia" required>
+    <option value="" disabled selected>Selecciona una materia</option>
+    <option value="Electronica digital">Electronica digital</option>
+    <option value="Seguridad Industrial">Seguridad Industrial</option>
+    <option value="Ingles">Ingles</option>
+    <option value="Programacion">Programacion</option>
+    <option value="Neumatica e Idraulica">Neumatica e Idraulica</option>
+</select>
+
+            <label>Genero:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="genero" value="Femenino" required>Femenino
+               <input type="radio" name="genero" value="Masculino"> Masculino</label>
+               
+            </div>
+
+            <label>Calificaciones:</label>
+            <input type="number" name="c1" placeholder="Calificación 1" required min="0" max="100" step="any">
+            <input type="number" name="c2" placeholder="Calificación 2" required min="0" max="100" step="any">
+            <input type="number" name="c3" placeholder="Calificación 3" required min="0" max="100" step="any">
+
+            <input type="submit" value="Evaluar">
+        </form>
+    </div>
+</body>
+</html>

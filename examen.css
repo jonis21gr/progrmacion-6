@@ -1,0 +1,102 @@
+        :root {
+            --rojo: #b22222;
+            --beige: #f5f0e6;
+            --rojo-claro: #dc5c5c;
+            --beige-oscuro: #d9cbbf;
+        }
+
+        body {
+            background-color: var(--beige);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: var(--beige-oscuro);
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(178, 34, 34, 0.4);
+            width: 400px;
+        }
+
+        h2 {
+            color: var(--rojo);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo-centro {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 100px;
+            height: auto;
+        }
+
+        form label {
+            display: block;
+            font-weight: 600;
+            color: var(--rojo);
+            margin-bottom: 6px;
+            margin-top: 15px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 8px 10px;
+            border: 2px solid var(--rojo-claro);
+            border-radius: 6px;
+            font-size: 14px;
+            color: #333;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        select:focus {
+            outline: none;
+            border-color: var(--rojo);
+            background-color: #fff;
+        }
+
+        .radio-group {
+            margin-top: 8px;
+            color: #333;
+        }
+
+        .radio-group input[type="radio"] {
+            margin-right: 6px;
+            cursor: pointer;
+        }
+
+        .radio-group label {
+            margin-right: 15px;
+            cursor: pointer;
+            color: var(--rojo-claro);
+            font-weight: 500;
+        }
+
+        input[type="submit"] {
+            background-color: var(--rojo);
+            color: var(--beige);
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 25px;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #7a0d0d;
+        }
